@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en" class="light-theme">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- loader-->
+  <link href="assets/css/pace.min.css" rel="stylesheet" />
+  <script src="assets/js/pace.min.js"></script>
+
+  <!--plugins-->
+  <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+
+  <!-- CSS Files -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <title>Thirumagal Farms</title>
+</head>
+
+<body>
+
+  <div class="login-bg-overlay au-sign-in-basic"></div>
+
+  <!--start wrapper-->
+  <div class="wrapper">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white p-3">
+        <div class="container-fluid">
+          <a href="javascript:;"><img src="assets/images/logo-icon-3.png" width="140" alt="" /></a>
+          
+          
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-lg-5 col-md-7 mx-auto mt-5">
+          <div class="card radius-10">
+            <div class="card-body p-4">
+              <div class="text-center">
+                <h4>Register</h4>
+                <p>Register to Login</p>
+              </div>
+              <form class="form-body row g-3">
+                <div class="col-12">
+                    <label for="username" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="col-12">
+                    <label for="mobile_no" class="form-label">Mobile No</label>
+                    <input id="mobile_no" class="form-control" type="tel"  pattern="[0-9]{5}[0-9]{5}" placeholder="Enter Your Mobile Number" required/>
+                </div>
+                <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+                </div>
+                <div class="col-12">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Enter Your password">
+                </div>
+                <div class="col-12">
+                  <label for="confirm_password" class="form-label">Confirm Password</label>
+                  <input type="password" class="form-control" id="confirm_password" placeholder="Re-enter Your password">
+                  <div id='message' class="mt-2"></div>
+                </div>
+                <div class="col-12 col-lg-12">
+                  <a href="login.html">
+                    <div class="d-grid">
+                      <button type="submit" class="btn btn-primary text-black" id="register">Register</button>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12  text-center">
+                    <a href="login.html">Already have an account?</a>
+                </div>
+                <div class="col-12  text-center">
+                  <span>Want to know about Pricing Plan?</span>  <a href="pricing.html" style="text-decoration:underline"> Click Here</a>
+                </div>
+                <!-- <div class="col-12">
+                  <label for="inputPassword" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Enter Your password"  pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); if(this.checkValidity()) form.confirm_password.pattern = this.value;" placeholder="Password" required>
+                </div>
+                <div class="col-12">
+                  <label for="inputPassword" class="form-label">Confirm Password</label>
+                  <input type="password" class="form-control" id="confirm_password" placeholder="Re-enter Your password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');" placeholder="Verify Password" required>
+                </div>
+                 -->
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="my-5">
+      <div class="container">
+        <div class="d-flex align-items-center gap-4 fs-5 justify-content-center social-login-footer">
+          <a href="javascript:;">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+          <a href="javascript:;">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="javascript:;">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a href="javascript:;">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="javascript:;">
+            <ion-icon name="logo-pinterest"></ion-icon>
+          </a>
+        </div>
+        
+      </div>
+    </footer>
+  </div>
+  <!--end wrapper-->
+  <!-- script Start -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+        $("#register").click(function () {
+            var password = $("#password").val();
+            var confirmPassword = $("#confirm_password").val();
+            if (password != confirmPassword) {
+              $('#message').html('Confirm Password Not Matched').css('color', 'red');
+                return false;
+            }
+            return true;
+        });
+    });
+</script>
+<!-- script end -->
+</body>
+
+</html>

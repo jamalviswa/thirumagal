@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en" class="light-theme">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- loader-->
+  <link href="assets/css/pace.min.css" rel="stylesheet" />
+  <script src="assets/js/pace.min.js"></script>
+
+  <!--plugins-->
+  <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+  <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+  <link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+
+  <!--plugins-->
+  <link href="assets/plugins/datetimepicker/css/classic.css" rel="stylesheet" />
+  <link href="assets/plugins/datetimepicker/css/classic.time.css" rel="stylesheet" />
+  <link href="assets/plugins/datetimepicker/css/classic.date.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+  <!-- CSS Files -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <!--Theme Styles-->
+  <link href="assets/css/dark-theme.css" rel="stylesheet" />
+  <link href="assets/css/semi-dark.css" rel="stylesheet" />
+  <link href="assets/css/header-colors.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+
+
+  <!--start wrapper-->
+  <div class="wrapper">
+
+    <!--start sidebar -->
+    <aside class="sidebar-wrapper" data-simplebar="true">
+      <div class="sidebar-header">
+        <div>
+          <img src="assets/images/logo-icon-2.png" class="logo-icon" alt="logo icon">
+        </div>
+        <div>
+          <h4 class="logo-text">Thirumagal Forms</h4>
+        </div>
+        <div class="toggle-icon ms-auto">
+          <ion-icon name="menu-sharp"></ion-icon>
+        </div>
+      </div>
+      <!--navigation-->
+      <ul class="metismenu" id="menu">
+        <li>
+          <a href="index.html">
+            <div class="parent-icon">
+              <ion-icon name="home-sharp"></ion-icon>
+            </div>
+            <div class="menu-title">Dashboard</div>
+          </a>
+
+        </li>
+        <li>
+          <a href="employee.html">
+            <div class="parent-icon">
+              <ion-icon name="person-sharp"></ion-icon>
+            </div>
+            <div class="menu-title">Employees</div>
+          </a>
+
+        </li>
+
+        <li>
+          <a href="goat.html">
+            <div class="parent-icon"><i class="fa-solid fa-cow"></i>
+            </div>
+            <div class="menu-title">Goats</div>
+          </a>
+
+        </li>
+
+        <li>
+          <a href="cow.html">
+            <div class="parent-icon"><i class="fa-solid fa-cow"></i>
+            </div>
+            <div class="menu-title">Cows</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:;">
+            <div class="parent-icon">
+              <ion-icon name="leaf-sharp"></ion-icon>
+            </div>
+            <div class="menu-title">Farm</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:;">
+            <div class="parent-icon"><i class="lni lni-bolt"></i>
+            </div>
+            <div class="menu-title">Motor</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="sub_admin_details.html">
+            <div class="parent-icon"><i class="fadeIn animated bx bx-user"></i>
+            </div>
+            <div class="menu-title">Sub Admin</div>
+          </a>
+          <!--<ul>
+              <li> <a href="table-basic-table.html"><ion-icon name="ellipse-outline"></ion-icon>Basic Table</a>
+              </li>
+              <li> <a href="table-advance-tables.html"><ion-icon name="ellipse-outline"></ion-icon>Advance Tables</a>
+              </li>
+              <li> <a href="table-datatable.html"><ion-icon name="ellipse-outline"></ion-icon>Data Table</a>
+              </li>
+            </ul>-->
+        </li>
+        <li>
+          <a href="settings.html">
+            <div class="parent-icon">
+              <ion-icon name="settings-outline"></ion-icon>
+            </div>
+            <div class="menu-title">Settings</div>
+          </a>
+
+        </li>
+
+        <li>
+          <a href="javascript:;">
+            <div class="parent-icon">
+              <ion-icon name="log-out-outline"></ion-icon>
+            </div>
+            <div class="menu-title">Logout</div>
+          </a>
+
+          <!--end navigation-->
+    </aside>
+    <!--end sidebar -->
+
+     <!--start top header-->
+     <header class="top-header">
+      <nav class="navbar navbar-expand gap-3">
+        <div class="mobile-sidebar">
+          <div>
+            <img src="assets/images/logo-icon-2.png" class="logo-icon" alt="logo icon">
+            <span class="logo-text">Thirumagal Forms</span>
+          </div>
+        </div>
+        <div class="mobile-menu-button top-navbar-right ms-auto">
+          <ion-icon name="menu-sharp"></ion-icon>
+        </div>
+        
+        <div class="top-navbar-right ms-auto">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item dropdown dropdown-large dropdown-apps">
+              <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;" data-bs-toggle="dropdown">
+                <div class="">
+                  <ion-icon name="apps-sharp"></ion-icon>
+                </div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                <div class="row row-cols-2 g-3 p-3">
+                  <div class="col text-center">
+                    <div class="app-box mx-auto bg-gradient-purple text-white"><i class="fa-solid fa-weight-scale"></i>
+                    </div>
+                    <div class="app-title">Weight</div>
+                  </div>
+                  <div class="col text-center">
+                    <div class="app-box mx-auto bg-gradient-info text-white"><i class="fa-solid fa-heart"></i>
+                    </div>
+                    <div class="app-title">Matings</div>
+                  </div>
+                  <div class="col text-center">
+                    <div class="app-box mx-auto bg-gradient-success text-white"><i class="fa-solid fa-recycle"></i>
+                    </div>
+                    <div class="app-title">Breeding</div>
+                  </div>
+                  <div class="col text-center">
+                    <div class="app-box mx-auto bg-gradient-danger text-white"><i class="fa-solid fa-syringe"></i>
+                    </div>
+                    <div class="app-title">Vaccines</div>
+                  </div>
+                  <div class="col text-center">
+                    <div class="app-box mx-auto bg-gradient-warning text-white"><i class='fas fa-coffee'></i>
+                    </div>
+                    <div class="app-title">Milk</div>
+                  </div>
+                  <div class="col text-center">
+                    <div class="app-box mx-auto bg-gradient-branding text-white"><i class='fas fa-money-bill'></i>
+                    </div>
+                    <div class="app-title">Financials</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown dropdown-large">
+              <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;" data-bs-toggle="dropdown">
+                <div class="position-relative">
+                   <span class="notify-badge">8</span>
+                  <ion-icon name="notifications-sharp"></ion-icon>
+                </div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end">
+                <a href="javascript:;">
+                  <div class="msg-header">
+                    <p class="msg-header-title">Notifications</p>
+                    <p class="msg-header-clear ms-auto">Marks all as read</p>
+                  </div> 
+                </a>
+                <div class="header-notifications-list">
+                      <a class="dropdown-item" href="javascript:;">
+                        <div class="d-flex align-items-center">
+                          <div class="notify text-primary"><ion-icon name="cart-outline"></ion-icon>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="msg-name">New Orders <span class="msg-time float-end">2 min
+                          ago</span></h6>
+                            <p class="msg-info">You have recived new orders</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+        <a href="javascript:;">
+                  <div class="text-center msg-footer">View All Notifications</div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown dropdown-user-setting">
+              <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;" data-bs-toggle="dropdown">
+                <div class="user-setting">
+                  <img src="assets/images/avatars/user.png" class="user-img" alt="">
+                </div>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="user_profile.html">
+                    <div class="d-flex flex-row align-items-center gap-2">
+                      <img src="assets/images/avatars/user.png" alt="" class="rounded-circle" width="54" height="54">
+                      <div class="">
+                        <h6 class="mb-0 dropdown-user-name">Vikram</h6>
+                        <small class="mb-0 dropdown-user-designation text-secondary">Founder</small>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+
+        </div> 
+      </nav>
+    </header>
+    <!--end top header-->
+
+    <!-- start page content wrapper-->
+    <div class="page-content-wrapper">
+      <!-- start page content-->
+      <div class="page-content">
+
+        <!--start breadcrumb-->
+        <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+          <div class="breadcrumb-title pe-3">Cow</div>
+          <div class="ps-3">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-0 p-0 align-items-center">
+                <li class="breadcrumb-item"><a href="index.html">
+                    <ion-icon name="home-outline"></ion-icon>
+                  </a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Cow Details</li>
+              </ol>
+            </nav>
+          </div>
+          
+        </div>
+        <!--end breadcrumb-->
+        <hr/>
+
+        <!-- PAGE ELEMENT START -->
+
+        
+        <div class="card">
+          <div class="card-body">
+            <div class="border p-3 rounded">
+            <h6 class="mb-0 text-uppercase">Add Cow Details</h6>
+             <hr>
+            <form class="row g-3">
+              <div class="col-12 col-md-6">
+                <label class="form-label">Animal Type</label>
+                <input type="text" class="form-control" value="Cow" disabled>
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">Tag ID</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">Breed</label>
+                <select class="form-select mb-3" aria-label="Default select example">
+                  <option selected="">Select Breed</option>
+                  <option value="male">KanniAdu</option>
+                 
+                </select>
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">Gender</label>
+                <select class="form-select mb-3" aria-label="Default select example" id="gender">
+                  <option selected="">Select Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">Color</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">Batch No</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">Purchase Type</label>
+                <select class="form-select mb-3" aria-label="Default select example" id="purchase_type" onchange="dropdownChange();">
+                  <option selected="">Select Purchase Type</option>
+                  <option value="own">Own Farm</option>
+                  <option value="purchase">Purchased Farm</option>
+                </select>
+              </div>
+
+              <!-- OWN FARM -->
+              <div class="col-12 col-md-6" id='location'>
+                <label class="form-label" >Location</label>
+                <input type="text" class="form-control" name="location">
+              </div>
+              <div class="col-12 col-md-6" id='own_birth_date' style='display:none;'>
+                <label class="form-label"> Birth Date</label>
+                <div class="input-group">
+                  <input class="result form-control datepickers" type="text"><span class="input-group-text"><i class="fadeIn animated bx bx-calendar"></i></span>
+                </div>
+              </div>
+              <div class="col-12 col-md-6" id='own_birth_weight' style='display:none;'>
+                <label class="form-label"> Birth Weight</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" name="own_birth_weight"><span class="input-group-text">Kg</span>
+                </div>
+              </div>
+              <div class="col-12 col-md-6" id="own_age" style='display:none;'>
+                <label class="form-label">Age</label>
+                <input type="text" class="form-control" placeholder="In Months" name="own_age">
+              </div>
+              <div class="col-12 col-md-6" id="own_birth_type" style='display:none;'>
+                <label class="form-label">Birth Type</label>
+                <select class="form-select mb-3" aria-label="Default select example" name="own_birth_type">
+                  <option selected="">Select Birth Type</option>
+                  <option value="twin">Twin</option>
+                  <option value="single">Single</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-6" style='display:none;' id="mother_tag">
+                <label class="form-label">Mother Tag ID</label>
+                <input type="text" class="form-control" name="mother_tag">
+              </div>
+              <div class="col-12 col-md-6"  style='display:none;' id="father_tag">
+                <label class="form-label">Father Tag ID</label>
+                <input type="text" class="form-control" id="father_tag">
+              </div>
+
+              <!-- PURCHASED FARM -->
+              
+
+              <div class="col-12 col-md-6"  style='display:none;' id="purchase_date" >
+                <label class="form-label">Purchase Date</label>
+                <div class="input-group">
+                  <input class="result form-control datepickers" type="text"><span class="input-group-text"><i class="fadeIn animated bx bx-calendar"></i></span>
+                </div>
+              </div>
+              
+              <div class="col-12 col-md-6"  style='display:none;' id="purchase_price">
+                <label class="form-label">Purchase Price</label>
+                <div class="input-group">
+                  <span class="input-group-text">Rs</span><input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" name="purchase_price">
+                </div>
+              </div>
+              <div class="col-12 col-md-6"  style='display:none;' id="age">
+                <label class="form-label">Age</label>
+                <input type="text" class="form-control" placeholder="In Months" name="age">
+              </div>
+              <div class="col-12 col-md-6" id="birth_type" style='display:none;'>
+                <label class="form-label">Birth Type</label>
+                <select class="form-select mb-3" aria-label="Default select example" name="birth_type">
+                  <option selected="">Select Birth Type</option>
+                  <option value="twin">Twin</option>
+                  <option value="single">Single</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-6"  style='display:none;' id="purchase_weight">
+                <label class="form-label">Purchase Weight</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" name="purchase_weight"><span class="input-group-text">Kg</span>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6" style='display:none;' id="female_condition" onchange="dropdownChange();">
+                <label class="form-label">Female Condition</label>
+                <select class="form-select mb-3 female" aria-label="Default select example">
+                  <option selected="">Select Female Condition</option>
+                  <option value="pregnant">Pregnant</option>
+                  <option value="mated">Mated</option>
+                </select>
+              </div>
+              <div class="col-12" id="mating_date" style='display:none;'>
+                <label class="form-label">Mating Date</label>
+                <div class="input-group">
+                  <input class="result form-control datepickers" type="text"><span class="input-group-text"><i class="fadeIn animated bx bx-calendar"></i></span>
+                </div>
+              </div>
+
+              <div class="col-12" style='display:none;' id="exp_delivery_date">
+                <label class="form-label">Expected Delivery Date</label>
+                <div class="input-group">
+                  <input class="result form-control datepickers" type="text"><span class="input-group-text"><i class="fadeIn animated bx bx-calendar"></i></span>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6" style='display:none;' id="sales">
+                <label class="form-label">Sales Type</label>
+                <select class="form-select mb-3 female" aria-label="Default select example">
+                  <option selected="">Select Sales Type</option>
+                  <option value="breeder">Breeder</option>
+                  <option value="qurbani">Qurbani</option>
+                </select>
+              </div>
+              <!-- <div class="col-12" style='display:none;' id="sales">
+                <label class="form-label gap-2">Sales Type</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="col-12 col-md-3 form-check form-check-inline">
+                  <label class="form-check-label">Breeder</label>
+									<input class="form-check-input" type="checkbox" name="breeder" id="breeder" onchange="enable()">
+								</div>
+                <div class="col-12 col-md-3 form-check form-check-inline">
+                  <label class="form-check-label">Qurbani</label>
+									<input class="form-check-input" type="checkbox" name="qurbani" id="qurbani" onchange="enable()">
+								</div>
+              </div> -->
+              
+              <div class="col-12">
+                  <label class="form-label">Remarks</label>
+                  <textarea class="form-control" aria-label="With textarea" rows="5"></textarea>
+              </div>
+              
+              <div class="col-12">
+                <div class="input-group">
+                  <button type="submit" class="btn btn-outline-primary">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <button type="cancel" class="btn btn-outline-primary">Cancel</button>
+                </div>
+              </div>
+              
+            </form>
+          </div>
+          </div>
+        </div>
+
+        <!-- PAGE ELEMENT END -->
+       
+
+        <!--start overlay-->
+        <div class="overlay nav-toggle-icon"></div>
+        <!--end overlay-->
+
+      </div>
+      <!--end wrapper-->
+
+      <!-- JS Files-->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+      <script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+      <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <!--plugins-->
+      <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+      <script src="assets/plugins/chartjs/chart.min.js"></script>
+      <script src="assets/js/index.js"></script>
+
+
+      <!--date picker plugins-->
+    <script src="assets/plugins/datetimepicker/js/legacy.js"></script>
+    <script src="assets/plugins/datetimepicker/js/picker.js"></script>
+    <script src="assets/plugins/datetimepicker/js/picker.time.js"></script>
+    <script src="assets/plugins/datetimepicker/js/picker.date.js"></script>
+    <script src="assets/plugins/bootstrap-material-datetimepicker/js/moment.min.js"></script>
+    <script src="assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.min.js"></script>
+    <script src="assets/js/form-date-time-pickes.js"></script>
+
+      
+      <!-- Main JS-->
+      <script src="assets/js/main.js"></script>
+      
+      
+</body>
+
+</html>

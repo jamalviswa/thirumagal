@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="en" class="light-theme">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- loader-->
+  <link href="assets/css/pace.min.css" rel="stylesheet" />
+  <script src="assets/js/pace.min.js"></script>
+
+  <!--plugins-->
+  <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+  <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+  <link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+
+  <!-- CSS Files -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <!--Theme Styles-->
+  <link href="assets/css/dark-theme.css" rel="stylesheet" />
+  <link href="assets/css/semi-dark.css" rel="stylesheet" />
+  <link href="assets/css/header-colors.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+  <!--start wrapper-->
+  <div class="wrapper">
+    <!--start sidebar -->
+    <aside class="sidebar-wrapper" data-simplebar="true">
+      <div class="sidebar-header">
+        <div>
+          <img src="assets/images/logo-icon-2.png" class="logo-icon" alt="logo icon">
+        </div>
+        <div>
+          <h4 class="logo-text">Thirumagal Forms</h4>
+        </div>
+        <div class="toggle-icon ms-auto">
+          <ion-icon name="menu-sharp"></ion-icon>
+        </div>
+      </div>
+      <!--navigation-->
+      <ul class="metismenu" id="menu">
+        <li>
+          <a href="index.html">
+            <div class="parent-icon">
+              <ion-icon name="home-sharp"></ion-icon>
+            </div>
+            <div class="menu-title">Dashboard</div>
+          </a>
+        </li>
+        <li>
+          <a href="employee.html">
+            <div class="parent-icon">
+              <ion-icon name="person-sharp"></ion-icon>
+            </div>
+            <div class="menu-title">Employees</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="goat.html">
+            <div class="parent-icon"><i class="fa-solid fa-cow"></i>
+            </div>
+            <div class="menu-title">Goats</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="cow.html">
+            <div class="parent-icon"><i class="fa-solid fa-cow"></i>
+            </div>
+            <div class="menu-title">Cows</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:;">
+            <div class="parent-icon">
+              <ion-icon name="leaf-sharp"></ion-icon>
+            </div>
+            <div class="menu-title">Farm</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:;">
+            <div class="parent-icon"><i class="lni lni-bolt"></i>
+            </div>
+            <div class="menu-title">Motor</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="sub_admin_details.html">
+            <div class="parent-icon"><i class="fadeIn animated bx bx-user"></i>
+            </div>
+            <div class="menu-title">Sub Admin</div>
+          </a>
+          <!--<ul>
+              <li> <a href="table-basic-table.html"><ion-icon name="ellipse-outline"></ion-icon>Basic Table</a>
+              </li>
+              <li> <a href="table-advance-tables.html"><ion-icon name="ellipse-outline"></ion-icon>Advance Tables</a>
+              </li>
+              <li> <a href="table-datatable.html"><ion-icon name="ellipse-outline"></ion-icon>Data Table</a>
+              </li>
+            </ul>-->
+        </li>
+
+        <li>
+          <a href="settings.html">
+            <div class="parent-icon">
+              <ion-icon name="settings-outline"></ion-icon>
+            </div>
+            <div class="menu-title">Settings</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:;">
+            <div class="parent-icon">
+              <ion-icon name="log-out-outline"></ion-icon>
+            </div>
+            <div class="menu-title">Logout</div>
+          </a>
+          <!--end navigation-->
+    </aside>
+    <!--end sidebar -->
+
+    <!--start top header-->
+    <header class="top-header">
+      <nav class="navbar navbar-expand gap-3">
+        <div class="mobile-sidebar">
+          <div>
+            <img src="assets/images/logo-icon-2.png" class="logo-icon" alt="logo icon">
+            <span class="logo-text">Thirumagal Forms</span>
+          </div>
+        </div>
+        <div class="mobile-menu-button top-navbar-right ms-auto">
+          <ion-icon name="menu-sharp"></ion-icon>
+        </div>
+
+        <div class="top-navbar-right ms-auto">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item dropdown dropdown-large dropdown-apps">
+              <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;" data-bs-toggle="dropdown">
+                <div class="">
+                  <ion-icon name="apps-sharp"></ion-icon>
+                </div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                <div class="row row-cols-2 g-3 p-3">
+                  <div class="col text-center">
+                    <div class="app-box mx-auto bg-gradient-purple text-white"><i class="fa-solid fa-weight-scale"></i>
+                    </div>
+                    <div class="app-title">Weight</div>
+                  </div>
+                  <div class="col text-center">
+                    <div class="app-box mx-auto bg-gradient-info text-white"><i class="fa-solid fa-heart"></i>
+                    </div>
+                    <div class="app-title">Matings</div>
+                  </div>
+                  <div class="col text-center">
+                    <div class="app-box mx-auto bg-gradient-success text-white"><i class="fa-solid fa-recycle"></i>
+                    </div>
+                    <div class="app-title">Breeding</div>
+                  </div>
+                  <div class="col text-center">
+                    <div class="app-box mx-auto bg-gradient-danger text-white"><i class="fa-solid fa-syringe"></i>
+                    </div>
+                    <div class="app-title">Vaccines</div>
+                  </div>
+                  <div class="col text-center">
+                    <div class="app-box mx-auto bg-gradient-warning text-white"><i class='fas fa-coffee'></i>
+                    </div>
+                    <div class="app-title">Milk</div>
+                  </div>
+                  <div class="col text-center">
+                    <div class="app-box mx-auto bg-gradient-branding text-white"><i class='fas fa-money-bill'></i>
+                    </div>
+                    <div class="app-title">Financials</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown dropdown-large">
+              <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;" data-bs-toggle="dropdown">
+                <div class="position-relative">
+                  <span class="notify-badge">8</span>
+                  <ion-icon name="notifications-sharp"></ion-icon>
+                </div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end">
+                <a href="javascript:;">
+                  <div class="msg-header">
+                    <p class="msg-header-title">Notifications</p>
+                    <p class="msg-header-clear ms-auto">Marks all as read</p>
+                  </div>
+                </a>
+                <div class="header-notifications-list">
+                  <a class="dropdown-item" href="javascript:;">
+                    <div class="d-flex align-items-center">
+                      <div class="notify text-primary">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </div>
+                      <div class="flex-grow-1">
+                        <h6 class="msg-name">New Orders <span class="msg-time float-end">2 min ago</span></h6>
+                        <p class="msg-info">You have recived new orders</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <a href="javascript:;">
+                  <div class="text-center msg-footer">View All Notifications</div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown dropdown-user-setting">
+              <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;" data-bs-toggle="dropdown">
+                <div class="user-setting">
+                  <img src="assets/images/avatars/user.png" class="user-img" alt="">
+                </div>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="user_profile.html">
+                    <div class="d-flex flex-row align-items-center gap-2">
+                      <img src="assets/images/avatars/user.png" alt="" class="rounded-circle" width="54" height="54">
+                      <div class="">
+                        <h6 class="mb-0 dropdown-user-name">Vikram</h6>
+                        <small class="mb-0 dropdown-user-designation text-secondary">Founder</small>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--end top header-->
+
+    <!-- start page content wrapper-->
+    <div class="page-content-wrapper">
+      <!-- start page content-->
+      <div class="page-content">
+        <!--start breadcrumb-->
+        <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+          <div class="breadcrumb-title pe-3">Dashboard</div>
+          <div class="ps-3">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-0 p-0 align-items-center">
+                <li class="breadcrumb-item"><a href="javascript:;">
+                    <ion-icon name="home-outline"></ion-icon>
+                  </a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <!--end breadcrumb-->
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-3">
+          <div class="col">
+            <div class="card radius-10">
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="widget-icon-2 bg-gradient-info text-white">
+                    <ion-icon name="person-sharp"></ion-icon>
+                  </div>
+                  <div class="fs-5 ms-auto">
+                    <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+                  </div>
+                </div>
+                <h5 class="my-3">Total Workers</h5>
+                <div class="progress mt-1" style="height: 5px;">
+                  <div class="progress-bar bg-gradient-info" role="progressbar" style="width: 65%"></div>
+                </div>
+                <p class="mb-0 mt-2">48,256<span class="float-end text-danger">-2.8%</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card radius-10">
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="widget-icon-2 bg-gradient-danger text-white">
+                    <i class="fa-solid fa-cow"></i>
+                  </div>
+                  <div class="fs-5 ms-auto">
+                    <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+                  </div>
+                </div>
+                <h5 class="my-3">Total Goats</h5>
+                <div class="progress mt-1" style="height: 5px;">
+                  <div class="progress-bar bg-gradient-danger" role="progressbar" style="width: 65%"></div>
+                </div>
+                <p class="mb-0 mt-2">$98,246<span class="float-end text-success">+5.9%</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card radius-10">
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="widget-icon-2 bg-gradient-success text-white">
+                    <i class="fa-solid fa-cow"></i>
+                  </div>
+                  <div class="fs-5 ms-auto">
+                    <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+                  </div>
+                </div>
+                <h5 class="my-3">Total Cows</h5>
+                <div class="progress mt-1" style="height: 5px;">
+                  <div class="progress-bar bg-gradient-success" role="progressbar" style="width: 65%"></div>
+                </div>
+                <p class="mb-0 mt-2">$58,653,24<span class="float-end text-success">+5.9%</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card radius-10">
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="widget-icon-2 bg-gradient-purple text-white">
+                    <i class="fa-solid fa-syringe"></i>
+                  </div>
+                  <div class="fs-5 ms-auto">
+                    <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+                  </div>
+                </div>
+                <h5 class="my-3">Total Vaccines</h5>
+                <div class="progress mt-1" style="height: 5px;">
+                  <div class="progress-bar bg-gradient-purple" role="progressbar" style="width: 65%"></div>
+                </div>
+                <p class="mb-0 mt-2">87,532,16<span class="float-end text-success">+8.5%</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card radius-10">
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="widget-icon-2 bg-gradient-branding text-white">
+                    <i class="lni lni-bolt"></i>
+                  </div>
+                  <div class="fs-5 ms-auto">
+                    <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+                  </div>
+                </div>
+                <h5 class="my-3">Total Motors</h5>
+                <div class="progress mt-1" style="height: 5px;">
+                  <div class="progress-bar bg-gradient-branding" role="progressbar" style="width: 65%"></div>
+                </div>
+                <p class="mb-0 mt-2">24.3%<span class="float-end text-danger">-5.6%</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card radius-10">
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="widget-icon-2 bg-gradient-warning text-white">
+                    <ion-icon name="person-sharp"></ion-icon>
+                  </div>
+                  <div class="fs-5 ms-auto">
+                    <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+                  </div>
+                </div>
+                <h5 class="my-3">Total Sub Admins</h5>
+                <div class="progress mt-1" style="height: 5px;">
+                  <div class="progress-bar bg-gradient-warning" role="progressbar" style="width: 65%"></div>
+                </div>
+                <p class="mb-0 mt-2">1,328<span class="float-end text-success">+7.6%</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card radius-10">
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="widget-icon-2 bg-gradient-success text-white">
+                    <ion-icon name="leaf-sharp"></ion-icon>
+                  </div>
+                  <div class="fs-5 ms-auto">
+                    <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+                  </div>
+                </div>
+                <h5 class="my-3">Total Farms[Acres]</h5>
+                <div class="progress mt-1" style="height: 5px;">
+                  <div class="progress-bar bg-gradient-success" role="progressbar" style="width: 65%"></div>
+                </div>
+                <p class="mb-0 mt-2">1,328<span class="float-end text-success">+7.6%</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card radius-10">
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="widget-icon-2 bg-gradient-info text-white">
+                    <i class="fa-solid fa-cow"></i>
+                  </div>
+                  <div class="fs-5 ms-auto">
+                    <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+                  </div>
+                </div>
+                <h5 class="my-3">Total Breed[Goat]</h5>
+                <div class="progress mt-1" style="height: 5px;">
+                  <div class="progress-bar bg-gradient-info" role="progressbar" style="width: 65%"></div>
+                </div>
+                <p class="mb-0 mt-2">1,328<span class="float-end text-success">+7.6%</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card radius-10">
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="widget-icon-2 bg-gradient-danger text-white">
+                    <i class="fa-solid fa-cow"></i>
+                  </div>
+                  <div class="fs-5 ms-auto">
+                    <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+                  </div>
+                </div>
+                <h5 class="my-3">Total Breed[Cow]</h5>
+                <div class="progress mt-1" style="height: 5px;">
+                  <div class="progress-bar bg-gradient-danger" role="progressbar" style="width: 65%"></div>
+                </div>
+                <p class="mb-0 mt-2">1,328<span class="float-end text-success">+7.6%</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!--end row-->
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-3 row-cols-xxl-3">
+        <div class="col">
+          <div class="card radius-10">
+            <div class="card-body">
+              <div class="d-flex align-items-center gap-3">
+                <div class="widget-icon-2 bg-light-success text-success">
+                  <ion-icon name="diamond-sharp"></ion-icon>
+                </div>
+                <div class="flex-grow-1">
+                  <p class="mb-0">Total Income</p>
+                  <h4 class="mb-2 text-success">$85K</h4>
+                  <div class="progress my-0" style="height: 6px;">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card radius-10">
+            <div class="card-body">
+              <div class="d-flex align-items-center gap-3">
+                <div class="widget-icon-2 bg-light-primary text-primary">
+                  <i class='fas fa-money-bill'></i>
+                </div>
+                <div class="flex-grow-1">
+                  <p class="mb-0">Total Expense</p>
+                  <h4 class="mb-2 text-primary">56M</h4>
+                  <div class="progress my-0" style="height: 6px;">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card radius-10">
+            <div class="card-body">
+              <div class="d-flex align-items-center gap-3">
+                <div class="widget-icon-2 bg-light-warning text-warning">
+                  <i class='fas fa-money-bill'></i>
+                </div>
+                <div class="flex-grow-1">
+                  <p class="mb-0">Total Amount</p>
+                  <h4 class="mb-2 text-warning">639</h4>
+                  <div class="progress my-0" style="height: 6px;">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end row-->
+
+      <div class="row row-cols-1 row-cols-lg-3">
+        <div class="col">
+          <div class="card radius-10">
+            <div class="card-body">
+              <div class="d-flex align-items-center gap-2">
+                <div class="fs-5">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </div>
+                <div>
+                  <p class="mb-0">Facebook</p>
+                </div>
+                <div class="fs-5 ms-auto">
+                  <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+                </div>
+              </div>
+              <div class="d-flex align-items-center mt-3">
+                <div>
+                  <h4 class="mb-0">10,328</h4>
+                  <p class="mb-0 font-13">Followers</p>
+                </div>
+                <div class="ms-auto">
+                  <div class="w_chart" id="chart8" data-percent="60">
+                    <span class="w_percent"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card radius-10">
+            <div class="card-body">
+              <div class="d-flex align-items-center gap-2">
+                <div class="fs-5">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </div>
+                <div>
+                  <p class="mb-0">Instagram</p>
+                </div>
+                <div class="fs-5 ms-auto">
+                  <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+                </div>
+              </div>
+              <div class="d-flex align-items-center mt-3">
+                <div>
+                  <h4 class="mb-0">17,536</h4>
+                  <p class="mb-0 font-13">Followers</p>
+                </div>
+                <div class="ms-auto">
+                  <div class="w_chart" id="chart9" data-percent="60">
+                    <span class="w_percent"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card radius-10">
+            <div class="card-body">
+              <div class="d-flex align-items-center gap-2">
+                <div class="fs-5">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </div>
+                <div>
+                  <p class="mb-0">Twitter</p>
+                </div>
+                <div class="fs-5 ms-auto">
+                  <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+                </div>
+              </div>
+              <div class="d-flex align-items-center mt-3">
+                <div>
+                  <h4 class="mb-0">26,294</h4>
+                  <p class="mb-0 font-13">Followers</p>
+                </div>
+                <div class="ms-auto">
+                  <div class="w_chart" id="chart10" data-percent="60">
+                    <span class="w_percent"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end row-->
+
+      <!--start overlay-->
+      <div class="overlay"></div>
+      <!--end overlay-->
+
+    </div>
+    <!--end wrapper-->
+
+    <!-- JS Files-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+    <script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!--plugins-->
+    <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+    <script src="assets/plugins/apexcharts-bundle/js/apexcharts.min.js"></script>
+    <script src="assets/plugins/easyPieChart/jquery.easypiechart.js"></script>
+    <script src="assets/js/widgets.js"></script>
+    <!-- Main JS-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
