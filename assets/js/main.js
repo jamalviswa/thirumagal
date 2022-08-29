@@ -268,25 +268,6 @@ $('.female').on('change', function () {
   }
 });
 
-// function enable()   
-//   {
-//     var breed=document.getElementById("breeder");
-//     var quar=document.getElementById("qurbani");
-//     if(breed.checked==true)    
-//     {
-//       document.getElementById("qurbani").disabled = true;
-//       document.getElementById("breeder").disabled = false;
-//     }
-//     else if(quar.checked==true)    
-//     {
-//       document.getElementById("qurbani").disabled = false;
-//       document.getElementById("breeder").disabled = true;
-//     }
-//     else{
-//       document.getElementById("breeder").disabled = false;
-//       document.getElementById("qurbani").disabled = false;
-//     }
-//   } 
 
   
 

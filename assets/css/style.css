@@ -293,6 +293,10 @@ ion-icon {
         display: none
     }
 
+    .card .mobile .input-group {
+        display: none;
+    }
+
 }
 
 
@@ -350,30 +354,6 @@ ion-icon {
 }
 
 
-.top-header .mobile-search-button {
-    display: none;
-}
-
-
-
-.top-header .navbar .searchbar {
-    position: relative;
-    width: 28%;
-}
-
-.top-header .navbar .searchbar .form-control {
-    box-shadow: none;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    border: 1px solid #e9ecef;
-    background-color: #fff;
-}
-
-.top-header .navbar .searchbar .form-control:focus {
-    background-color: #fff;
-    border-color: #c27be4;
-    box-shadow: 0 0 0 .25rem rgba(146, 62, 185, 0.3)
-}
 
 .top-header .navbar .top-navbar-right .nav-link {
     color: #293445;
@@ -391,23 +371,6 @@ ion-icon {
     padding-right: .7rem;
     padding-left: .7rem;
     display: block;
-}
-
-.top-header .navbar .searchbar .search-icon {
-
-    color: #41464b;
-    font-size: 1.2rem;
-    opacity: 0.5;
-    font-size: 20px;
-
-}
-
-.top-header .navbar .searchbar .search-close-icon {
-    right: 2rem;
-    opacity: 0.5;
-    cursor: pointer;
-    display: none;
-    font-size: 20px;
 }
 
 .top-header .navbar .user-img {
@@ -756,6 +719,7 @@ ion-icon {
     margin-right: 3px; 
     margin-left: 3px; 
 }
+
 .service-box {
     font-size: 25px;
     color: #1c1b1b;
@@ -1089,6 +1053,11 @@ ion-icon {
     .top-header .sidebar-header {
         display: block;
     }
+
+   .card .mobile .input-group {
+    display: block;
+   }
+    
     .footer {
         left: 0px;
     }
@@ -1113,6 +1082,10 @@ ion-icon {
     .login-cover-wrapper {
         width: auto;
         height: auto;
+    }
+
+    .card  .desk .input-group {
+       display: none;
     }
 }
 
@@ -1169,7 +1142,6 @@ ion-icon {
     transform: translateX(-50%);
     left: 50%;
     top: 20px;
-
     position: relative;
 }
 
@@ -1440,3 +1412,11 @@ ion-icon {
   .btn-toggle.active {
     background-color: #923eb9;
   }
+
+
+ 
+  
+
+
+
+
